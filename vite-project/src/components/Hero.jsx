@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Features() {
+export default function Hero() {
   return (
     <section
       id="hero"
@@ -42,11 +42,11 @@ export default function Features() {
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="px-8 py-3 rounded-xl bg-white text-black font-semibold text-lg shadow-lg hover:bg-gray-200 transition-all">
-              <p>Explore Our UAV Fleet</p>
+              <a href="#products"><p>Explore Our UAV Fleet</p></a>
             </button>
 
             <button className="px-8 py-3 rounded-xl border border-white/70 text-white font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all">
-              <p>Speak to a Defense Consultant</p>
+              <a href="#contact"><p>Speak to a Defense Consultant</p></a>
             </button>
           </div>
         </motion.div>
