@@ -1,9 +1,56 @@
-import React from 'react'
+import { motion } from "framer-motion";
 
-function Hero() {
+export default function Features() {
   return (
-    <div>Hero</div>
-  )
-}
+    <section
+      id="hero"
+      className="relative w-full h-[80vh] sm:h-screen overflow-hidden"
+    >
+      <motion.video
+        src="../../medias/Hero.mp4"
+        autoPlay
+        loop
+        muted
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.15 }}
+        transition={{ duration: 15, ease: "easeOut" }}
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      />
 
-export default Hero
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative z-10 flex items-center justify-center h-full">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="text-center px-4"
+        >
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight space-y-2">
+            <h2 className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
+              Precision UAV Technology
+            </h2>
+
+            <h2 className="bg-gradient-to-b from-orange-400 to-green-400 bg-clip-text text-transparent">
+              for Critical Missions
+            </h2>
+          </h2>
+
+          <h3 className="mt-4 text-xl sm:text-2xl bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
+            Engineering Intelligence in the Sky
+          </h3>
+
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button className="px-8 py-3 rounded-xl bg-white text-black font-semibold text-lg shadow-lg hover:bg-gray-200 transition-all">
+              <p>Explore Our UAV Fleet</p>
+            </button>
+
+            <button className="px-8 py-3 rounded-xl border border-white/70 text-white font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all">
+              <p>Speak to a Defense Consultant</p>
+            </button>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
