@@ -19,7 +19,8 @@ export default function Header({ scrolled }) {
               <img
                 src="../../medias/VyomGarudLogo.png"
                 alt="VyomGarud"
-                className="w-30 h-30 sm:w-40 sm:h-40"
+                className="w-30 h-30 sm:w-15 sm:h-15 border-white border-2 rounded-full overflow-hidden group-hover:scale-105 transition-transform duration-200"
+                
               />
             </div>
             <span className="text-lg sm:text-xl md:text-2xl font-medium ">
@@ -47,6 +48,12 @@ export default function Header({ scrolled }) {
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
               <h3>Highlights</h3>
+            </a>
+            <a
+              href="#contact"
+              className="text-gray-300 hover:text-white text-sm lg:text-base"
+            >
+              <h3>Contact</h3>
             </a>
           </div>
 
@@ -86,6 +93,13 @@ export default function Header({ scrolled }) {
               className="block text-gray-300 hover:text-white text-sm lg:text-base"
             >
               <h3>Highlights</h3>
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base"
+            >
+              <h3>Contact</h3>
             </a>
           </div>
         </div>
