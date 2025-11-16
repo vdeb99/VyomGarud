@@ -80,7 +80,10 @@ The interface delivers a military-grade aesthetic, blending:
 ## 📦 Installation
 
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/yourusername/vyomgarud.git
+=======
+>>>>>>> eb6676d3150bf29737bc0cb5dbadf18433d407cf
 cd vyomgarud
 npm install
 npm run dev
