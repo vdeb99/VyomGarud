@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
-
+import high from "../../medias/highlights.png";
 const highlights = [
   {
     title: "Mission-Critical Reliability",
     description:
-      "Aircraft, avionics, and software co-designed for redundancy, health monitoring, and graceful degradation—so missions complete even when conditions don’t cooperate."
+      "Aircraft, avionics, and software co-designed for redundancy, health monitoring, and graceful degradation—so missions complete even when conditions don’t cooperate.",
   },
   {
     title: "Edge AI, Real-Time Decisions",
     description:
-      "Onboard computer vision and sensor fusion enable target detection, tracking, and route optimisation without constant operator micromanagement."
+      "Onboard computer vision and sensor fusion enable target detection, tracking, and route optimisation without constant operator micromanagement.",
   },
   {
     title: "Secure by Design",
     description:
-      "End-to-end encryption, hardened links, and flexible APIs to integrate with existing command, control, and intelligence systems."
-  }
+      "End-to-end encryption, hardened links, and flexible APIs to integrate with existing command, control, and intelligence systems.",
+  },
 ];
 
 export default function Highlights() {
@@ -25,7 +25,7 @@ export default function Highlights() {
       className="relative py-20 px-10 sm:px-6 lg:px-8 overflow-hidden"
     >
       <img
-        src="../../medias/highlights.png"
+        src={high}
         alt="Highlights Background"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -33,7 +33,6 @@ export default function Highlights() {
       <div className="absolute inset-0 bg-black/80"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
-
         <div className="text-center mb-16">
           <div className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             <h2 className="bg-gradient-to-b from-gray-100 to-gray-500 bg-clip-text text-transparent">
@@ -62,7 +61,6 @@ export default function Highlights() {
             </motion.div>
           ))}
         </div>
-        
       </div>
     </section>
   );

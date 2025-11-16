@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import about1 from "../../medias/about1.jpg";
+import about2 from "../../medias/about2.webp";
+import about3 from "../../medias/about3.webp";
+import about4 from "../../medias/about4.webp";
 
 const about = [
   {
@@ -6,29 +10,29 @@ const about = [
     description:
       "VyomGarud is a cutting-edge UAV and drone-systems company dedicated to pushing the boundaries of autonomous flight. We engineer platforms that redefine modern aerial intelligence and operational capability.",
     imagePosition: "right",
-    image: "../../medias/about1.jpg"
+    image: { about1 },
   },
   {
     title: "Mission-Focused Engineering",
     description:
       "Our mission is to equip defense forces, enterprises, and government agencies with the most reliable, intelligent, and adaptable aerial platforms on the market.",
     imagePosition: "left",
-    image: "../../medias/about2.webp"
+    image: { about2 },
   },
   {
     title: "Uncompromised Reliability",
     description:
       "Every UAV is designed to perform in high-risk, high-impact situations with hardened structures, redundant systems, and mission-proven endurance.",
     imagePosition: "right",
-    image: "../../medias/about3.webp"
+    image: { about3 },
   },
   {
     title: "Advanced Autonomy",
     description:
       "AI-driven navigation, perception, and decision systems reduce operator workload and dramatically increase mission success rates.",
     imagePosition: "left",
-    image: "../../medias/about4.webp"
-  }
+    image: { about4 },
+  },
 ];
 
 export default function About() {
@@ -50,7 +54,10 @@ export default function About() {
           {about.map((abt, key) => (
             <motion.div
               key={key}
-              initial={{ opacity: 0, x: abt.imagePosition === "left" ? -80 : 80 }}
+              initial={{
+                opacity: 0,
+                x: abt.imagePosition === "left" ? -80 : 80,
+              }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.2 }}
@@ -58,7 +65,6 @@ export default function About() {
                 abt.imagePosition === "right" ? "lg:flex-row-reverse" : ""
               }`}
             >
-              
               <div className="flex-1 w-full">
                 <div className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange-300/20 to-gray-500/20 rounded-xl sm:rounded-2xl transition-all duration-500" />
@@ -80,7 +86,6 @@ export default function About() {
                 </div>
               </div>
 
-              
               <motion.div
                 className="flex-1 w-full"
                 initial={{ opacity: 0, y: 30 }}

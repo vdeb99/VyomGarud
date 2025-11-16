@@ -6,7 +6,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-
+import logo from "../../medias/logo.png";
 export default function Footer() {
   return (
     <footer className="bg-black relative border-t border-white/10 pt-16 pb-10 px-6 sm:px-10 lg:px-20">
@@ -14,14 +14,15 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
-        <a className="flex items-center space-x-1 group cursor-pointer" href="#">
-            <div >
+          <a
+            className="flex items-center space-x-1 group cursor-pointer"
+            href="#"
+          >
+            <div>
               <img
-                src="../../medias/logo.png"
-            
+                src={logo}
                 alt="VyomGarud"
                 className="w-30 h-30 sm:w-15 sm:h-15 border-white border-2 rounded-full overflow-hidden group-hover:scale-105 transition-transform duration-200"
-                
               />
             </div>
             <span className="text-lg sm:text-xl md:text-2xl font-medium ">

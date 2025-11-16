@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import hero from "../../medias/Hero.mp4";
 export default function Hero() {
   return (
     <section
@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative w-full h-[80vh] sm:h-screen overflow-hidden"
     >
       <motion.video
-        src="../../medias/Hero.mp4"
+        src={hero}
         autoPlay
         loop
         muted
@@ -42,11 +42,15 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="px-8 py-3 rounded-xl bg-white text-black font-semibold text-lg shadow-lg hover:bg-gray-200 transition-all">
-              <a href="#products"><p>Explore Our UAV Fleet</p></a>
+              <a href="#products">
+                <p>Explore Our UAV Fleet</p>
+              </a>
             </button>
 
             <button className="px-8 py-3 rounded-xl border border-white/70 text-white font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all">
-              <a href="#contact"><p>Speak to a Defense Consultant</p></a>
+              <a href="#contact">
+                <p>Speak to a Defense Consultant</p>
+              </a>
             </button>
           </div>
         </motion.div>
