@@ -9,7 +9,7 @@ const products = [
   {
     title: "VG-Raven Tactical UAV",
     description: "Long-endurance ISR drone built for harsh terrain.",
-    image: { uav1 },
+    image:  uav1 ,
     details: [
       "Flight Time: 12 hours",
       "Range: 60 km",
@@ -20,7 +20,7 @@ const products = [
   {
     title: "VG-Astra AI Recon",
     description: "Autonomous mapping and target tracking.",
-    image: { uav2 },
+    image:  uav2 ,
     details: [
       "Edge AI: Onboard detection + tracking",
       "Autonomy: Waypoint navigation",
@@ -31,7 +31,7 @@ const products = [
   {
     title: "VG-Falcon Heavy-Lift",
     description: "Designed for logistics & precision supply drops.",
-    image: { uav3 },
+    image:  uav3 ,
     details: [
       "Payload: 20–35 kg",
       "BVLOS: Supported",
@@ -42,7 +42,7 @@ const products = [
   {
     title: "VG-Nano Stealth Scout",
     description: "Silent micro-UAV for stealth reconnaissance.",
-    image: { uav4 },
+    image:  uav4 ,
     details: [
       "Ultra-low noise propulsion",
       "Night Ops Ready",

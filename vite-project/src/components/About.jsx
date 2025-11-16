@@ -10,28 +10,28 @@ const about = [
     description:
       "VyomGarud is a cutting-edge UAV and drone-systems company dedicated to pushing the boundaries of autonomous flight. We engineer platforms that redefine modern aerial intelligence and operational capability.",
     imagePosition: "right",
-    image: { about1 },
+    image:  about1 ,
   },
   {
     title: "Mission-Focused Engineering",
     description:
       "Our mission is to equip defense forces, enterprises, and government agencies with the most reliable, intelligent, and adaptable aerial platforms on the market.",
     imagePosition: "left",
-    image: { about2 },
+    image:  about2 ,
   },
   {
     title: "Uncompromised Reliability",
     description:
       "Every UAV is designed to perform in high-risk, high-impact situations with hardened structures, redundant systems, and mission-proven endurance.",
     imagePosition: "right",
-    image: { about3 },
+    image:  about3 ,
   },
   {
     title: "Advanced Autonomy",
     description:
       "AI-driven navigation, perception, and decision systems reduce operator workload and dramatically increase mission success rates.",
     imagePosition: "left",
-    image: { about4 },
+    image:  about4 ,
   },
 ];
 
