@@ -16,8 +16,8 @@ function App() {
     <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
       <Header scrolled={scrolled} />
       <Hero />
-      <Products />
       <About />
+      <Products />
       <Highlights />
       <Contact />
       <Footer />
