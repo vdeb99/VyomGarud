@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import hero from "../../medias/Hero.mp4";
+import HeroVideo from "../../medias/HeroVideo.mp4";
 export default function Hero() {
   return (
     <section
@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative w-full h-[80vh] sm:h-screen overflow-hidden"
     >
       <motion.video
-        src={hero}
+        src={HeroVideo}
         autoPlay
         loop
         muted
