@@ -203,3 +203,34 @@ h6 {
 .no-tap-highlight {
   -webkit-tap-highlight-color: transparent;
 }
+@keyframes scroll-loop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  
+  .animate-scroll {
+    animation: scroll-loop 10s linear infinite;
+  }
+  
+  
+  @media (min-width: 640px) {
+    .animate-scroll {
+      animation: scroll-loop 15s linear infinite;
+    }
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .animate-scroll {
+      animation: scroll-loop 20s linear infinite;
+    }
+  }
+  
+  
+  @media (min-width: 1440px) {
+    .animate-scroll {
+      animation: scroll-loop 26s linear infinite;
+    }
+  }
+  
