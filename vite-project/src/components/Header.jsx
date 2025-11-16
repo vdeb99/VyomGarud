@@ -14,7 +14,7 @@ export default function Header({ scrolled }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
-          <div className="flex items-center space-x-1 group cursor-pointer">
+          <a className="flex items-center space-x-1 group cursor-pointer" href="#">
             <div>
               <img
                 src="../../medias/VyomGarudLogo.png"
@@ -27,7 +27,7 @@ export default function Header({ scrolled }) {
               <h1 className="text-white">Vyom</h1>
               <h1 className="text-orange-400">Garud</h1>
             </span>
-          </div>
+          </a>
 
           
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">

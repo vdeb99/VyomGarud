@@ -26,7 +26,7 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="text-center px-4"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight space-y-2">
+          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight space-y-2">
             <h2 className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
               Precision UAV Technology
             </h2>
@@ -34,7 +34,7 @@ export default function Hero() {
             <h2 className="bg-gradient-to-b from-orange-400 to-green-400 bg-clip-text text-transparent">
               for Critical Missions
             </h2>
-          </h2>
+          </div>
 
           <h3 className="mt-4 text-xl sm:text-2xl bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
             Engineering Intelligence in the Sky
