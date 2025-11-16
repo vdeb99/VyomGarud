@@ -22,7 +22,7 @@ export default function Footer() {
               <img
                 src={logo}
                 alt="VyomGarud"
-                className="w-30 h-30 sm:w-15 sm:h-15 border-white border-2 rounded-full overflow-hidden group-hover:scale-105 transition-transform duration-200"
+                className="w-10 h-10 sm:w-15 sm:h-15 border-white border-2 rounded-full overflow-hidden group-hover:scale-105 transition-transform duration-200"
               />
             </div>
             <span className="text-lg sm:text-xl md:text-2xl font-medium ">
