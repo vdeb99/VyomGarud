@@ -1,1 +1,205 @@
+/* Tailwind v4 base */
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: "Montserrat", sans-serif;
+    --font-subheading: "Poppins", sans-serif;
+    --font-body: "Inter", sans-serif;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-heading);
+  }
+
+  h3,
+  h4 {
+    font-family: var(--font-subheading);
+  }
+
+  p,
+  span,
+  li,
+  a {
+    font-family: var(--font-body);
+  }
+
+  :root {
+    --bg: #0b0d12;
+    --text: #e4e7eb;
+  }
+
+  .dark {
+    --bg: #0b0d12;
+    --text: #e4e7eb;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+}
+@layer utilities {
+  .animate-in {
+    animation-fill-mode: both;
+  }
+
+  .slide-in-from-top {
+    animation-name: slideInFromTop;
+  }
+
+  .slide-in-from-bottom {
+    animation-name: slideInFromBottom;
+  }
+
+  .duration-200 {
+    animation-duration: 200ms;
+  }
+
+  .duration-300 {
+    animation-duration: 300ms;
+  }
+
+  .duration-700 {
+    animation-duration: 700ms;
+  }
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Fix nested heading hydration issues */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-wrapper:hover .animate-scroll {
+  animation-play-state: paused;
+}
+
+@keyframes glowEdge {
+  0% {
+    box-shadow: 0 0 0px rgba(255, 140, 0, 0.2), 0 0 0px rgba(0, 255, 140, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.45),
+      0 0 35px rgba(0, 255, 140, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(255, 140, 0, 0.2), 0 0 0px rgba(0, 255, 140, 0.15);
+  }
+}
+
+.glow-animate {
+  animation: glowEdge 3s ease-in-out infinite;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.glass {
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-dark {
+  backdrop-filter: blur(18px);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-line {
+  display: block;
+  line-height: 1.1;
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 12px rgba(255, 120, 50, 0.7);
+}
+
+.button-outline {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.gradient-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.gradient-orange-green {
+  background: linear-gradient(135deg, #ff7a18cc, #00ff9dcc);
+}
+
+.img-smooth {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.video-bg {
+  pointer-events: none;
+  user-select: none;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.no-tap-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
